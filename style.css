@@ -1,0 +1,428 @@
+header {
+    width: 100%;
+    min-height: 400px;
+    padding-top: 3em;
+}
+#home header {
+    background: no-repeat lightgray url("Images/cliff_ocean.jpg");
+    background-size: 2000px;
+}
+#activities header {
+    background: no-repeat lightgray url("Images/runfly.jpg");
+    background-size:2000px;
+}
+#contact header {
+    background: no-repeat lightgray url("Images/cliff_rock.jpg");
+    background-size: 2000px;
+}
+.main-header {
+    background-color: rgb(255,255,255,0.8);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+.main-header .logo img {
+    width: 125px;
+}
+.main-menu {
+    margin-left: 227px;
+    font-weight: 400;
+}
+.main-menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-left: 1px solid rgba(202,204,202,0.6);
+    line-height: 100px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+.main-menu ul li a {
+    text-decoration: none;
+    color: #888;
+}
+.main-menu ul li a:hover {
+    color: #9ed034;
+}
+.main-menu ul li.active {
+    background: #9ed034;
+    border: none;
+}
+.main-menu ul li.active a {
+    color: #fff;
+}
+/* Main */
+main {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+h2 {
+    color: #9ed034;
+    font-weight: bold;
+    font-size: xx-large;
+}
+h3 {
+    margin-top: 25px;
+    font-weight: bold;
+    font-size: larger;
+}
+h4 {
+    font-weight: bold;
+    font-size: larger;
+}
+/* Partners */
+section {
+    width: 100%;
+    background-color: #4288c3;
+}
+section #partners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 1em 0;
+}
+section #partners .partner {
+    display: inline-block;
+    margin: 0 0.75em;
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    border-radius: 50%;
+}
+section #partners .partner img {
+    width: 90px;
+    height: 90px;
+}
+/* Footer */
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: #ecfab8;
+    padding-bottom: 1em;
+}
+footer #nondisclaimer .copy {
+    padding: 3.5em 3.5em 3.5em 13em;
+    float: left;
+    font-size: 0.9em;
+}
+footer #nondisclaimer .social {
+    padding: 2.5em;
+    float: right;
+    margin-right: 9.25em;
+}
+footer #disclaimer {
+    clear: both;
+}
+footer #disclaimer p {
+    text-align: center;
+    font-size: 0.85em;
+}
+footer #nondisclaimer .social .fa {
+    padding: 15px;
+    font-size: 15px;
+    text-align: center;
+    width: 15px;
+    text-decoration: none;
+    margin: 0 4px;
+    border-radius: 50%;
+}
+footer #nondisclaimer .social .fa:hover {
+    opacity: 0.7;
+}
+footer #nondisclaimer .social .fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+footer #nondisclaimer .social .fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+footer #nondisclaimer .social .fa-instagram {
+    background: #125688;
+    color: white;
+}
+footer #social {
+    text-align: center;
+    margin-top: 1em;
+    list-style: horizontal;
+}
+/* Media Queries (Adjustments for smaller screens) */
+@media (max-width: 768px) {
+    .main-menu ul {
+        text-align: center;
+    }
+
+    .main-header {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-menu ul {
+        display: block;
+        margin-top: 20px;
+    }
+
+    .main-header .logo img {
+        width: 100px;
+    }
+}
+table {
+    width: 1000px;
+    margin: 4em auto 0 auto;
+}
+caption {
+    background: #852b1b;
+    height: 40px;
+    color: #fff;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-top: 1em;
+}
+thead {
+    background: #bde1ff;
+}
+tbody {
+    background: #eeffe6;
+    text-align: center;
+}
+th,td {
+    width: 225px;
+    height: 75px;
+    vertical-align: middle;
+    border: 1px solid #852b1b;
+}
+th:first-child {
+    width: 125;
+    height: 50px;
+    background: #4977d1;
+    color: #fff;
+}
+th:first-child {
+    font-weight: bold;
+    background: #bde1ff;
+}
+.selected {
+    background-color: #9ed034 !important; /* Green background */
+}
+/* Display box container */
+#activities main #displaySelected {
+    visibility: hidden;
+    margin: 0 auto;
+    width: 600px;
+    border: 2px solid #9ed034;
+    padding: 0.75em;
+}
+
+/* Result section inside the display box */
+#activities main #displaySelected #result,
+#activities main #displaySelected #sendinfo {
+    display: inline-block;
+    margin: 0;
+}
+
+/* Styling for the result section */
+#activities main #result {
+    min-height: 50px;
+    width: 300px;
+    padding: 0;
+}
+
+#activities main #result h4 {
+    margin-bottom: 1em;
+    font-size: 1.15em;
+}
+
+/* Styling for the input and button */
+#activities main #displaySelected #sendinfo input[type="email"] {
+    width: 200px;
+    margin-right: 10px;
+}
+#activities main #displaySelected #sendinfo button {
+    padding: 5px 10px;
+    background-color: #9ed034;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+#activities main #displaySelected #sendinfo button:hover {
+    background-color: #7c9b29;
+}
+/* Sticky Navbar */
+.navbar {
+    background-color: rgba(38, 41, 61, 0.7) !important;
+}
+
+.navbar .nav-link {
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Highlighted selected table cell */
+.tdhighlight {
+    background-color: #9ed034;
+    color: white;
+}
+legend {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    color: #4977d1;
+    font-family: 'Arial Narrow Bold', sans-serif;
+}
+fieldset    {
+    border: 1px solid #9ed034;
+}
+label {
+    display: block;
+    padding: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.textbox {
+    width: 300px;
+    color: #000;
+    margin: 30px;
+}
+input[type="text"] {
+    width: 300px;
+}
+.radios {
+    padding-left: 30px;
+}
+input[type="radio"] {
+    margin: 10px;
+}
+.selectmenu {
+    width: 300px;
+    margin: 30px;
+}
+.commentbox {
+    width: 300px;
+    padding-left: 30px;
+}
+textarea {
+    width: 300px;
+    color: #753a30;
+}
+form.button input{
+    margin: 20px 0 0 200px;
+    width: 100px; height: 30px;
+    display: block;
+    background-color: #4977d1;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 15px;
+}
+/* Cliffs */
+section #cliffs {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 2em 0 2em 0;
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.cliff-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+.cliff-card {
+    width: 500px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.cliff-card img {
+    width: 500px;
+    height: auto;
+    display: block;
+}
+
+.cliff-card h3 {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #8b0000;
+    color: white;
+    font-size: 1.2em;
+}
+.cliff-card:nth-child(odd) {
+    margin-left: 100px; /* Shift the left column inward */
+}
+.cliff-card:nth-child(even) {
+    margin-right: 1000px; /* Shift the left column inward */
+}
+/* Lightbox backdrop */
+.backdrop {
+    z-index: 1;
+    opacity: 0;
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* Lightbox box */
+.box {
+    z-index: 2;
+    position: fixed;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Close button */
+.close {
+    float: right;
+    cursor: pointer;
+    font-size: 20px;
+    color: black;
+}
+
+/* Image inside lightbox */
+.box img {
+    width: 100%;
+}
+
+/* Image size in the gallery */
+.cliff-card img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cliff-card img:hover {
+    transform: scale(1.05);
+}
+/* Contact Button */
+.btn-inquire {
+    background-color: #4977d1;
+    color: white;
+    font-size: 18px;
+}
+/* Make background images responsive */
+#home, #activities, #cliffs, #contact {
+    background-size: cover;
+    background-position: center;
+}
